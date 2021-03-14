@@ -18,7 +18,11 @@ class LeftButton extends StatelessWidget {
       onPanUpdate: (_) {
         isHolding = false;
       },
-      child: Image.asset('assets/control_left.png'),
+      child: Image.asset(
+        'assets/control_left.png',
+        height: 70,
+        width: 70,
+      ),
     );
   }
 }
@@ -41,7 +45,11 @@ class RightButton extends StatelessWidget {
       onTapUp: (_) {
         isHolding = false;
       },
-      child: Image.asset('assets/control_right.png'),
+      child: Image.asset(
+        'assets/control_right.png',
+        height: 70,
+        width: 70,
+      ),
     );
   }
 }
@@ -54,7 +62,10 @@ class JumpButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: function,
-      child: Image.asset('assets/control_up.png'),
+      child: Image.asset(
+        'assets/control_up.png',
+        height: 70,
+      ),
     );
   }
 }

@@ -2,7 +2,10 @@ import 'package:bounce_game/presentation/pages/game_page.dart';
 import 'package:bounce_game/providers/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
+final navigatorKey = GlobalKey<NavigatorState>();
 
 class AppWidget extends StatelessWidget {
   @override
@@ -13,10 +16,14 @@ class AppWidget extends StatelessWidget {
 
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
     return ChangeNotifierProvider(
-      create: (_) => MyProvider(),
+      create: (_) => MyProvider()..startGame(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        navigatorKey: navigatorKey,
         home: GamePage(),
+        theme: ThemeData.light().copyWith(
+          textTheme: GoogleFonts.pressStart2pTextTheme()
+        ),
       ),
     );
   }

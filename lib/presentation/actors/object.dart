@@ -24,5 +24,13 @@ class Wall2x2Object extends Object {
 }
 
 class RingObject extends Object {
-  RingObject({Ring ring, Key key}) : super(actor: ring, key: key);
+  RingObject({Actor ring, Key key}) : super(actor: ring, key: key);
+}
+
+class ThornObject extends Object {
+  ThornObject({Thorn thorn, Key key}) : super(actor: thorn, key: key);
+}
+
+class Finishbject extends Object {
+  Finishbject({Finish finish, Key key}) : super(actor: finish, key: key);
 }
