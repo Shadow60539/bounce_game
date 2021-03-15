@@ -53,6 +53,7 @@ class DialogManager {
                     width: 8,
                   ),
                   Splash(
+                      splashColor: Colors.white,
                       onTap: () {
                         Navigator.pop(navigatorKey.currentContext);
                         Provider.of<MyProvider>(navigatorKey.currentContext,
@@ -111,6 +112,7 @@ class DialogManager {
                           width: 8,
                         ),
                         Splash(
+                          splashColor: Colors.white,
                           onTap: () {
                             Navigator.pop(navigatorKey.currentContext);
                             Provider.of<MyProvider>(navigatorKey.currentContext,

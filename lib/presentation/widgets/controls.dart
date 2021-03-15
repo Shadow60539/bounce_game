@@ -39,9 +39,9 @@ class RightButton extends StatelessWidget {
         isHolding = true;
         function();
       },
-      // onPanUpdate: (_) {
-      //   isHolding = false;
-      // },
+      onPanUpdate: (_) {
+        isHolding = false;
+      },
       onTapUp: (_) {
         isHolding = false;
       },

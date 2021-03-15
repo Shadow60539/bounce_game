@@ -19,6 +19,7 @@ class AppWidget extends StatelessWidget {
       create: (_) => MyProvider()..startGame(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        title: 'Bounce Flutter',
         navigatorKey: navigatorKey,
         home: GamePage(),
         theme: ThemeData.light().copyWith(

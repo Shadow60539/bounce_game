@@ -11,7 +11,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 
 class MyProvider extends ChangeNotifier {
-  static const _delta = 0.001;
+  static const _delta = 0.0003;
   static const _deltaWall2x2 = _delta * 1.1;
   static const _deltaThorn = _delta * 0.95;
   static const _deltaRing = _delta * 0.95;
@@ -66,6 +66,9 @@ class MyProvider extends ChangeNotifier {
 //<----------------------------------Methods----------------------------------->
 
   void startGame() {
+    _ring1.reset(0.25, 0.9);
+    _ring2.reset(2.12, -0.54);
+    _ringsList.clear();
     _ringsList.addAll([_ring1, _ring2]);
     _score = 0;
     _lives = 3;
@@ -73,8 +76,7 @@ class MyProvider extends ChangeNotifier {
     _ball.reset();
     _wall.reset();
     _wall2x2.reset();
-    _ring1.reset(0.25, 0.9);
-    _ring2.reset(2.12, -0.54);
+
     _thorn1.reset();
     _thorn2.reset(3.32);
     _movingThorn.reset(5.0);
@@ -168,7 +170,7 @@ class MyProvider extends ChangeNotifier {
               if (_barrier.object == Thorn) {
                 _fallToGround(timer);
               } else {
-                _ball.dy = _barrier.dy;
+                // _ball.dy = _barrier.dy;
                 timer.cancel();
                 _resetJump();
               }
