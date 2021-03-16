@@ -1,5 +1,5 @@
 
-[![support](https://img.shields.io/badge/plateform-flutter%7Candroid%20studio-9cf?style=for-the-badge&logo=appveyor)](https://github.com/Shadow60539/bounce_app) (https://github.com/Shadow60539/bounce_game)        ![GitHub Repo stars](https://img.shields.io/github/stars/Shadow60539/bounce_game?style=for-the-badge)      ![GitHub forks](https://img.shields.io/github/forks/Shadow60539/bounce_game?style=for-the-badge)
+[![support](https://img.shields.io/badge/plateform-flutter%7Candroid%20studio-9cf?style=for-the-badge&logo=appveyor)]      ![GitHub Repo stars](https://img.shields.io/github/stars/Shadow60539/bounce_game?style=for-the-badge)      ![GitHub forks](https://img.shields.io/github/forks/Shadow60539/bounce_game?style=for-the-badge)
 
 
 # Bounce Flutter
